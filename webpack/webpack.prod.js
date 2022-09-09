@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const CleanCSSPlugin = require('less-plugin-clean-css')
 const { merge } = require('webpack-merge')
 const commonConfig = require('./webpack.common')
@@ -95,6 +95,6 @@ module.exports = merge(commonConfig, {
         publicPath: ''
       }
     ]),
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
   ]
 })
